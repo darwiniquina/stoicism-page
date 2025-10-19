@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>stoicism-page</title>
+</head>
+
+<body class="font-lora-regular hidden">
+  <script type="module" src="/src/main.js"></script>
+
+  <div id="app">
+    <nav
+      class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-lg text-white py-4 px-8 flex justify-between items-center z-50 font-lora-regular">
+      <div class="flex space-x-8 gap-10 text-sm uppercase   tracking-[0.3rem]">
+        <a href="#home" class="hover:text-gray-500 transition-colors duration-200">Home</a>
+        <a href="#philosophers" class="hover:text-gray-500 transition-colors duration-200">Philosophers</a>
+        <a href="#teachings" class="hover:text-gray-500 transition-colors duration-200">Teachings</a>
+        <a href="#about" class="hover:text-gray-500 transition-colors duration-200">About</a>
+      </div>
+    </nav>
+
+    <div
+      class="h-screen max-h-[900px] bg-[url('assets/hero-bg.svg')] bg-cover bg-center bg-no-repeat flex px-20 relative ">
+
+      <div class="absolute top-0 left-0 w-[300px] h-[300px] bg-red-700 rounded-full blur-[10rem] opacity-50"></div>
+
+      <div class="w-[40%] flex flex-col items-start justify-center">
+        <h1
+          class="hero-text font-lora-regular text-[5rem] font-serif text-[#F5F5F5] transform scale-x-[1.5] text-center origin-left">
+          STOICISM
+        </h1>
+        <p class="hero-paragraph not-visited:not-target:font-lora-regular text-xl text-[#B8B6B3] tracking-widest">
+          Stoicism teaches the pursuit of virtue and
+          tranquility by mastering what you can control — your thoughts and actions — and accepting what you cannot.</p>
+      </div>
+
+      <div class="relative w-[60%] flex flex-col items-start justify-end">
+        <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-red-700 rounded-full blur-[120px] opacity-50 z-0">
+        </div>
+
+        <img src="assets/hero-fifth.svg" class="hero-image relative z-10" alt="">
+      </div>
+
+
+
+    </div>
+
+    <div class="banner">
+      STOICISM STOICISM STOICISM STOICISM
+    </div>
+</body>
+
+</html>
