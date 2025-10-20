@@ -14,10 +14,10 @@
   <header class="fixed top-0 left-0 w-full z-50 bg-black text-white border-b border-white/20">
     <nav class="max-w-screen-xl mx-auto flex justify-center items-center px-6 py-4 uppercase tracking-wider text-sm">
       <div class="flex gap-10 sm:gap-16 text-center">
-        <a href="#stoicism" class="hover:underline underline-offset-4">Stoicism</a>
-        <a href="#epictetus" class="hover:underline underline-offset-4">Epictetus</a>
-        <a href="#marcus" class="hover:underline underline-offset-4">Marcus</a>
-        <a href="#seneca" class="hover:underline underline-offset-4">Seneca</a>
+        <p href="#" class="nav-stoic hover:underline underline-offset-4 cursor-pointer">Stoicism</p>
+        <p href="#" class="nav-epic hover:underline underline-offset-4 cursor-pointer">Epictetus</p>
+        <p href="#" class="nav-senec hover:underline underline-offset-4 cursor-pointer">Seneca</p>
+        <p href="#" class="nav-marcus hover:underline underline-offset-4 cursor-pointer">Marcus</p>
       </div>
     </nav>
   </header>
@@ -88,21 +88,22 @@
       <section id="epictetus"
         class="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-10 lg:px-20 py-20 border-t-4 border-black bg-[#F9F9F9] text-black overflow-hidden">
 
-        <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <div class=" absolute inset-0 opacity-10 pointer-events-none">
           <div
             class="w-full h-full bg-[linear-gradient(to_right,_#000_1px,_transparent_1px),linear-gradient(to_bottom,_#000_1px,_transparent_1px)] bg-[size:40px_40px]">
           </div>
         </div>
 
-        <div class="absolute top-[15%] left-[10%] w-[250px] h-[250px] bg-black rounded-full blur-[120px] opacity-10">
+        <div class="  absolute top-[15%] left-[10%] w-[250px] h-[250px] bg-black rounded-full blur-[120px] opacity-10">
         </div>
         <div
-          class="absolute bottom-[10%] right-[15%] w-[300px] h-[300px] bg-black rounded-full blur-[160px] opacity-15">
+          class=" absolute bottom-[10%] right-[15%] w-[300px] h-[300px] bg-black rounded-full blur-[160px] opacity-15">
         </div>
 
-        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center max-w-screen-xl w-full">
+        <div
+          class=" relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center max-w-screen-xl w-full">
 
-          <div class="flex flex-col justify-center text-center md:text-left space-y-4">
+          <div class="epictetus-left flex flex-col justify-center text-center md:text-left space-y-4">
             <h1 class="font-extrabold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
               Epictetus
             </h1>
@@ -116,7 +117,7 @@
             </p>
           </div>
 
-          <div class="flex justify-center items-center">
+          <div class="epictetus-center flex justify-center items-center">
             <div class="relative">
               <img src="assets/epictetus.svg" alt="Epictetus"
                 class="w-[clamp(200px,35vw,450px)] object-contain contrast-125 saturate-0" />
@@ -124,7 +125,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col justify-center text-center md:text-left space-y-4">
+          <div class="epictetus-right flex flex-col justify-center text-center md:text-left space-y-4">
             <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
               The Stoic Mind
             </h2>
@@ -188,7 +189,7 @@
         <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center max-w-screen-xl w-full">
 
           <div class="flex flex-col justify-center text-center md:text-left space-y-4 order-2 md:order-1">
-            <h1 class="font-extrabold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
+            <h1 class="font-extrabold text-[clamp(2.5rem,8vw,4rem)] leading-none uppercase">
               Marcus Aurelius
             </h1>
             <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
@@ -222,7 +223,6 @@
         </div>
       </section>
 
-
       <footer class="w-full border-t-4 border-black bg-[#F9F9F9] text-black px-6 sm:px-10 lg:px-20 py-16">
         <div
           class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
@@ -239,11 +239,10 @@
           <div class="space-y-3">
             <h3 class="font-semibold uppercase text-sm tracking-widest">Explore</h3>
             <ul class="space-y-1 text-sm font-mono">
-              <li><a href="#hero" class="hover:underline underline-offset-4">Home</a></li>
-              <li><a href="#stoicism" class="hover:underline underline-offset-4">Stoicism</a></li>
-              <li><a href="#epictetus" class="hover:underline underline-offset-4">Epictetus</a></li>
-              <li><a href="#marcus" class="hover:underline underline-offset-4">Marcus Aurelius</a></li>
-              <li><a href="#seneca" class="hover:underline underline-offset-4">Seneca</a></li>
+              <p>Stoicism</p>
+              <p>Epictetus</p>
+              <p>Seneca</p>
+              <p>Marcus</p>
             </ul>
           </div>
 
@@ -259,10 +258,16 @@
         </script>
       </footer>
 
+      <div class="thankyou-placeholder h-[100px]  bottom-0 w-full flex items-center font-extrabold bg-black">
+      </div>
+
     </div>
   </div>
 
-
+  <div
+    class="thankyou-popup h-[100px] bg-black text-white text-center p-4 fixed bottom-0 w-full flex items-center justify-center font-extrabold text-md cursor-pointer ">
+    Thankyou for your time! Click here to read again.
+  </div>
 
 </body>
 
