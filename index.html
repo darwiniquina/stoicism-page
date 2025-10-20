@@ -9,10 +9,9 @@
 </head>
 
 <body>
-
   <script src="/src/particles.min.js"></script>
   <script type="module" src="/src/main.js"></script>
-  <header id="" class="fixed top-0 left-0 w-full z-50 bg-black text-white border-b border-white/20">
+  <header class="fixed top-0 left-0 w-full z-50 bg-black text-white border-b border-white/20">
     <nav class="max-w-screen-xl mx-auto flex justify-center items-center px-6 py-4 uppercase tracking-wider text-sm">
       <div class="flex gap-10 sm:gap-16 text-center">
         <a href="#stoicism" class="hover:underline underline-offset-4">Stoicism</a>
@@ -23,237 +22,245 @@
     </nav>
   </header>
 
-  <section id="hero"
-    class="relative flex items-center justify-center min-h-screen bg-[#F9F9F9] text-black border-b-4 border-black overflow-hidden">
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
 
-    <div class="absolute inset-0 opacity-[0.08] pointer-events-none">
-      <div
-        class="w-full h-full bg-[radial-gradient(circle_at_center,_#000_1px,_transparent_1px)] bg-[length:40px_40px]">
-      </div>
-    </div>
+      <section id="hero"
+        class="relative flex items-center justify-center min-h-screen bg-[#F9F9F9] text-black border-b-4 border-black overflow-hidden">
 
-    <h1
-      class="absolute text-center font-extrabold text-[clamp(5rem,13vw,16rem)] tracking-tight uppercase leading-none select-none">
-      STOICISM
-    </h1>
-
-    <div class="relative">
-      <div class="absolute -top-4 -left-4 w-full h-full border-4 border-black -z-10"></div>
-      <img src="assets/hero.png" alt="Stoic Figure"
-        class="w-[clamp(220px,50vw,500px)] object-contain contrast-125 saturate-0" />
-    </div>
-
-    <p
-      class="absolute bottom-10 text-xs sm:text-sm tracking-wider uppercase font-mono opacity-70 border-t border-black pt-3">
-      Philosophy of endurance and control
-    </p>
-  </section>
-
-  <section id="stoicism"
-    class="relative flex flex-col md:flex-row items-center justify-center md:justify-between min-h-screen bg-[#F9F9F9] text-black px-6 sm:px-10 lg:px-20 py-20 overflow-hidden border-t-4 border-black">
-
-    <div class="absolute inset-0 pointer-events-none opacity-10">
-      <div
-        class="w-full h-full bg-[radial-gradient(circle_at_center,_#000_1px,_transparent_1px)] bg-[length:40px_40px]">
-      </div>
-    </div>
-
-    <div
-      class="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center z-10 text-center md:text-left space-y-10">
-      <div class="leading-none">
-        <h1 class="text-[clamp(3rem,10vw,9rem)] font-extrabold tracking-tight">
-          STOIC
+        <h1
+          class="absolute text-center font-extrabold text-[clamp(5rem,13vw,16rem)] tracking-tight uppercase leading-none select-none">
+          STOICISM
         </h1>
-        <div class="h-[3px] w-20 bg-black my-3 mx-auto md:mx-0"></div>
-        <h1 class="text-[clamp(3rem,10vw,9rem)] font-extrabold tracking-tight -mt-3">
-          ISM
-        </h1>
-      </div>
 
-      <div class="relative inline-block">
-        <div class="absolute -top-2 -left-2 w-full h-full border-2 border-gray-800"></div>
-        <div class="border border-black px-6 py-5 max-w-md text-[clamp(0.9rem,1.5vw,1.1rem)] bg-[#F9F9F9] font-serif">
-          Master your mind. Control your emotions. Face adversity with unwavering strength.
-          The ancient practice of rational thought and personal virtue.
-        </div>
-      </div>
-    </div>
-
-    <div class="w-full md:w-1/2 flex justify-center md:justify-end mt-12 md:mt-0 z-10">
-      <div class="relative">
-        <img src="assets/stoicism.svg" alt="Stoic Figure"
-          class="w-[clamp(250px,50vw,600px)] object-contain saturate-0 contrast-125" />
-        <div class="absolute -top-6 -left-6 w-full h-full border-4 border-black -z-10"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="epictetus"
-    class="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-10 lg:px-20 py-20 border-t-4 border-black bg-[#F9F9F9] text-black overflow-hidden">
-
-    <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <div
-        class="w-full h-full bg-[linear-gradient(to_right,_#000_1px,_transparent_1px),linear-gradient(to_bottom,_#000_1px,_transparent_1px)] bg-[size:40px_40px]">
-      </div>
-    </div>
-
-    <div class="absolute top-[15%] left-[10%] w-[250px] h-[250px] bg-black rounded-full blur-[120px] opacity-10"></div>
-    <div class="absolute bottom-[10%] right-[15%] w-[300px] h-[300px] bg-black rounded-full blur-[160px] opacity-15">
-    </div>
-
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center max-w-screen-xl w-full">
-
-      <div class="flex flex-col justify-center text-center md:text-left space-y-4">
-        <h1 class="font-extrabold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
-          Epictetus
-        </h1>
-        <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
-          Control & Virtue
-        </h2>
-        <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
-          Born enslaved, he learned the only freedom that matters — mastery of the self. His mind became unbreakable,
-          his logic absolute.
-        </p>
-      </div>
-
-      <div class="flex justify-center items-center">
         <div class="relative">
-          <img src="assets/epictetus.svg" alt="Epictetus"
-            class="w-[clamp(200px,35vw,450px)] object-contain contrast-125 saturate-0" />
           <div class="absolute -top-4 -left-4 w-full h-full border-4 border-black -z-10"></div>
+          <img src="assets/hero.png" alt="Stoic Figure"
+            class="w-[clamp(220px,50vw,500px)] object-contain contrast-125 saturate-0" />
         </div>
-      </div>
 
-      <div class="flex flex-col justify-center text-center md:text-left space-y-4">
-        <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
-          The Stoic Mind
-        </h2>
-        <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
-          “It’s not what happens to you, but how you react that matters.” His wisdom survives because it refuses comfort
-          — only clarity.
+        <p
+          class="absolute bottom-10 text-xs sm:text-sm tracking-wider uppercase font-mono opacity-70 border-t border-black pt-3">
+          Philosophy of endurance and control
         </p>
-      </div>
+      </section>
 
-    </div>
-  </section>
+      <section id="stoicism"
+        class="relative flex flex-col md:flex-row items-center justify-center md:justify-between min-h-screen bg-[#F9F9F9] text-black px-6 sm:px-10 lg:px-20 py-20 overflow-hidden border-t-4 border-black">
 
-  <section id="seneca"
-    class="relative min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 sm:px-10 lg:px-20 py-20 border-t-4 border-black bg-[#EDEDED] text-black">
-    <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <div
-        class="w-full h-full bg-[linear-gradient(to_right,_#000_1px,_transparent_1px),linear-gradient(to_bottom,_#000_1px,_transparent_1px)] bg-[size:40px_40px]">
-      </div>
-    </div>
-
-    <div class="w-full md:w-1/2 flex flex-col justify-center text-left z-10 space-y-6">
-      <h1 class="font-bold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
-        Seneca
-      </h1>
-
-      <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
-        Reason & Restraint
-      </h2>
-
-      <p class="text-[clamp(1rem,2vw,1.25rem)] leading-snug max-w-md font-mono">
-        Advisor to emperors, poet of mortality. Seneca taught that time is our most
-        precious possession — squandered in distraction, saved in reflection. He wielded
-        reason as both shield and mirror.
-      </p>
-    </div>
-
-    <div class="w-full md:w-1/2 flex justify-center md:justify-end z-10 mb-10 md:mb-0">
-      <div class="relative">
-        <img src="assets/seneca.png" alt="Seneca"
-          class="w-[clamp(200px,45vw,500px)] object-contain contrast-125 saturate-0" />
-        <div class="absolute -top-4 -right-4 w-full h-full border-4 border-black -z-10"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="marcus"
-    class="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-10 lg:px-20 py-20 border-t-4 border-black bg-[#F2F2F2] text-black overflow-hidden">
-
-    <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <div
-        class="w-full h-full bg-[linear-gradient(to_right,_#000_1px,_transparent_1px),linear-gradient(to_bottom,_#000_1px,_transparent_1px)] bg-[size:40px_40px]">
-      </div>
-    </div>
-
-    <div class="absolute top-[10%] right-[10%] w-[300px] h-[300px] bg-black rounded-full blur-[140px] opacity-10"></div>
-    <div class="absolute bottom-[5%] left-[15%] w-[250px] h-[250px] bg-black rounded-full blur-[180px] opacity-15">
-    </div>
-
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center max-w-screen-xl w-full">
-
-      <div class="flex flex-col justify-center text-center md:text-left space-y-4 order-2 md:order-1">
-        <h1 class="font-extrabold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
-          Marcus Aurelius
-        </h1>
-        <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
-          Duty & Reflection
-        </h2>
-        <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
-          Emperor of Rome, philosopher of self-command. He ruled the world but sought mastery over the mind, not the
-          empire. His writings remind us: calm is power.
-        </p>
-      </div>
-
-      <div class="flex justify-center items-center order-1 md:order-2">
-        <div class="relative">
-          <img src="assets/marcus.svg" alt="Marcus Aurelius"
-            class="w-[clamp(220px,40vw,480px)] object-contain contrast-125 saturate-0" />
-          <div class="absolute -top-4 -left-4 w-full h-full border-4 border-black -z-10"></div>
+        <div class="absolute inset-0 pointer-events-none opacity-10">
+          <div
+            class="w-full h-full bg-[radial-gradient(circle_at_center,_#000_1px,_transparent_1px)] bg-[length:40px_40px]">
+          </div>
         </div>
-      </div>
 
-      <div class="flex flex-col justify-center text-center md:text-left space-y-4 order-3">
-        <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
-          Meditations
-        </h2>
-        <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
-          “You have power over your mind — not outside events.” His *Meditations* are a manual for restraint and grace
-          under fire. The emperor’s solitude turned into philosophy.
-        </p>
-      </div>
+        <div
+          class="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center z-10 text-center md:text-left space-y-10">
+          <div class="leading-none">
+            <h1 class="stoicism-stoic text-[clamp(3rem,10vw,9rem)] font-extrabold tracking-tight">
+              XOXOXO
+            </h1>
+            <div class="h-[3px] w-20 bg-black my-3 mx-auto md:mx-0"></div>
+            <h1 class="stoicism-ism text-[clamp(3rem,10vw,9rem)] font-extrabold tracking-tight -mt-3">
+              ISM
+            </h1>
+          </div>
+
+          <div class="relative inline-block">
+            <div class="absolute -top-2 -left-2 w-full h-full border-2 border-gray-800"></div>
+            <div
+              class="paragraph border border-black px-6 py-5 max-w-md text-[clamp(0.9rem,1.5vw,1.1rem)] bg-[#F9F9F9] font-serif">
+              Master your mind. Control your emotions. Face adversity with unwavering strength.
+              The ancient practice of rational thought and personal virtue.
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end mt-12 md:mt-0 z-10">
+          <div class="relative">
+            <img src="assets/stoicism.svg" alt="Stoic Figure"
+              class="w-[clamp(250px,50vw,600px)] object-contain saturate-0 contrast-125" />
+            <div class="absolute -top-6 -left-6 w-full h-full border-4 border-black -z-10"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="epictetus"
+        class="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-10 lg:px-20 py-20 border-t-4 border-black bg-[#F9F9F9] text-black overflow-hidden">
+
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <div
+            class="w-full h-full bg-[linear-gradient(to_right,_#000_1px,_transparent_1px),linear-gradient(to_bottom,_#000_1px,_transparent_1px)] bg-[size:40px_40px]">
+          </div>
+        </div>
+
+        <div class="absolute top-[15%] left-[10%] w-[250px] h-[250px] bg-black rounded-full blur-[120px] opacity-10">
+        </div>
+        <div
+          class="absolute bottom-[10%] right-[15%] w-[300px] h-[300px] bg-black rounded-full blur-[160px] opacity-15">
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center max-w-screen-xl w-full">
+
+          <div class="flex flex-col justify-center text-center md:text-left space-y-4">
+            <h1 class="font-extrabold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
+              Epictetus
+            </h1>
+            <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
+              Control & Virtue
+            </h2>
+            <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
+              Born enslaved, he learned the only freedom that matters — mastery of the self. His mind became
+              unbreakable,
+              his logic absolute.
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <div class="relative">
+              <img src="assets/epictetus.svg" alt="Epictetus"
+                class="w-[clamp(200px,35vw,450px)] object-contain contrast-125 saturate-0" />
+              <div class="absolute -top-4 -left-4 w-full h-full border-4 border-black -z-10"></div>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center text-center md:text-left space-y-4">
+            <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
+              The Stoic Mind
+            </h2>
+            <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
+              “It’s not what happens to you, but how you react that matters.” His wisdom survives because it refuses
+              comfort
+              — only clarity.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="seneca"
+        class="relative min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-center md:justify-between px-6 sm:px-10 lg:px-20 py-20 border-t-4 border-black bg-[#EDEDED] text-black">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <div
+            class="w-full h-full bg-[linear-gradient(to_right,_#000_1px,_transparent_1px),linear-gradient(to_bottom,_#000_1px,_transparent_1px)] bg-[size:40px_40px]">
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 flex flex-col justify-center text-left z-10 space-y-6">
+          <h1 class="font-bold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
+            Seneca
+          </h1>
+
+          <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
+            Reason & Restraint
+          </h2>
+
+          <p class="text-[clamp(1rem,2vw,1.25rem)] leading-snug max-w-md font-mono">
+            Advisor to emperors, poet of mortality. Seneca taught that time is our most
+            precious possession — squandered in distraction, saved in reflection. He wielded
+            reason as both shield and mirror.
+          </p>
+        </div>
+
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end z-10 mb-10 md:mb-0">
+          <div class="relative">
+            <img src="assets/seneca.png" alt="Seneca"
+              class="w-[clamp(200px,45vw,500px)] object-contain contrast-125 saturate-0" />
+            <div class="absolute -top-4 -right-4 w-full h-full border-4 border-black -z-10"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="marcus"
+        class="relative min-h-[90vh] flex items-center justify-center px-6 sm:px-10 lg:px-20 py-20 border-t-4 border-black bg-[#F2F2F2] text-black overflow-hidden">
+
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <div
+            class="w-full h-full bg-[linear-gradient(to_right,_#000_1px,_transparent_1px),linear-gradient(to_bottom,_#000_1px,_transparent_1px)] bg-[size:40px_40px]">
+          </div>
+        </div>
+
+        <div class="absolute top-[10%] right-[10%] w-[300px] h-[300px] bg-black rounded-full blur-[140px] opacity-10">
+        </div>
+        <div class="absolute bottom-[5%] left-[15%] w-[250px] h-[250px] bg-black rounded-full blur-[180px] opacity-15">
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center max-w-screen-xl w-full">
+
+          <div class="flex flex-col justify-center text-center md:text-left space-y-4 order-2 md:order-1">
+            <h1 class="font-extrabold text-[clamp(2.5rem,8vw,5rem)] leading-none uppercase">
+              Marcus Aurelius
+            </h1>
+            <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
+              Duty & Reflection
+            </h2>
+            <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
+              Emperor of Rome, philosopher of self-command. He ruled the world but sought mastery over the mind, not the
+              empire. His writings remind us: calm is power.
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center order-1 md:order-2">
+            <div class="relative">
+              <img src="assets/marcus.svg" alt="Marcus Aurelius"
+                class="w-[clamp(220px,40vw,480px)] object-contain contrast-125 saturate-0" />
+              <div class="absolute -top-4 -left-4 w-full h-full border-4 border-black -z-10"></div>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center text-center md:text-left space-y-4 order-3">
+            <h2 class="text-lg md:text-xl font-mono uppercase tracking-wide border-t-2 border-black pt-4">
+              Meditations
+            </h2>
+            <p class="text-[clamp(1rem,2vw,1.1rem)] leading-snug font-mono opacity-90">
+              “You have power over your mind — not outside events.” His *Meditations* are a manual for restraint and
+              grace
+              under fire. The emperor’s solitude turned into philosophy.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <footer class="w-full border-t-4 border-black bg-[#F9F9F9] text-black px-6 sm:px-10 lg:px-20 py-16">
+        <div
+          class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
+
+          <div class="space-y-4">
+            <h2 class="font-bold text-2xl tracking-tight uppercase">Stoic Archive</h2>
+            <p class="text-sm max-w-sm font-mono">
+              A minimalist collection of Stoic wisdom — distilled from the writings of
+              Epictetus, Seneca, and Marcus Aurelius.
+              <br />Practice reason. Embrace resilience. Seek tranquility.
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <h3 class="font-semibold uppercase text-sm tracking-widest">Explore</h3>
+            <ul class="space-y-1 text-sm font-mono">
+              <li><a href="#hero" class="hover:underline underline-offset-4">Home</a></li>
+              <li><a href="#stoicism" class="hover:underline underline-offset-4">Stoicism</a></li>
+              <li><a href="#epictetus" class="hover:underline underline-offset-4">Epictetus</a></li>
+              <li><a href="#marcus" class="hover:underline underline-offset-4">Marcus Aurelius</a></li>
+              <li><a href="#seneca" class="hover:underline underline-offset-4">Seneca</a></li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="border-t-2 border-black mt-16 pt-6 text-center text-xs font-mono uppercase tracking-widest">
+          © <span id="year"></span> Stoicism Project — Darwin Iquina.
+        </div>
+
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+      </footer>
 
     </div>
-  </section>
-
-
-  <footer class="w-full border-t-4 border-black bg-[#F9F9F9] text-black px-6 sm:px-10 lg:px-20 py-16">
-    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
-
-      <div class="space-y-4">
-        <h2 class="font-bold text-2xl tracking-tight uppercase">Stoic Archive</h2>
-        <p class="text-sm max-w-sm font-mono">
-          A minimalist collection of Stoic wisdom — distilled from the writings of
-          Epictetus, Seneca, and Marcus Aurelius.
-          <br />Practice reason. Embrace resilience. Seek tranquility.
-        </p>
-      </div>
-
-      <div class="space-y-3">
-        <h3 class="font-semibold uppercase text-sm tracking-widest">Explore</h3>
-        <ul class="space-y-1 text-sm font-mono">
-          <li><a href="#hero" class="hover:underline underline-offset-4">Home</a></li>
-          <li><a href="#stoicism" class="hover:underline underline-offset-4">Stoicism</a></li>
-          <li><a href="#epictetus" class="hover:underline underline-offset-4">Epictetus</a></li>
-          <li><a href="#marcus" class="hover:underline underline-offset-4">Marcus Aurelius</a></li>
-          <li><a href="#seneca" class="hover:underline underline-offset-4">Seneca</a></li>
-        </ul>
-      </div>
-
-
-    </div>
-
-    <div class="border-t-2 border-black mt-16 pt-6 text-center text-xs font-mono uppercase tracking-widest">
-      © <span id="year"></span> Stoicism Project — Darwin Iquina.
-    </div>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </footer>
+  </div>
 
 
 

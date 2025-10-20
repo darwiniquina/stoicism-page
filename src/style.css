@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
-
 img {
     border-start-end-radius: 50%;
     border-end-start-radius: 50%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* ANTI FOUC */
+body {
+    display: none;
 }
